@@ -4,55 +4,79 @@
       <h3 data-ch5-i18n="-+buttons.standard.title+-">standard</h3>
       <div class="btn-group">
         <ch5-button class="shadow-pulse-gradient-button" customClass="gradient-button--peach" shape="rounded-rectangle"
-            label="-+buttons.gradient.btn.peach+-" sendeventonclick="38" ></ch5-button>
+          label="-+buttons.gradient.btn.peach+-" sendeventonclick="38"></ch5-button>
         <ch5-button class="shadow-pulse-gradient-button" customClass="gradient-button--purple" shape="rounded-rectangle"
-            label="-+buttons.gradient.btn.purple+-" sendeventonclick="25"></ch5-button>
+          label="-+buttons.gradient.btn.purple+-" sendeventonclick="25"></ch5-button>
         <ch5-button class="shadow-pulse-gradient-button" customClass="gradient-button--blue" shape="rounded-rectangle"
-            label="-+buttons.gradient.btn.blue+-" sendeventonclick="31"></ch5-button>
-    </div>
-    <h3 data-ch5-i18n="-+buttons.volume.title+-">ANALOGUE SLIDERS</h3>
-    <ch5-slider class="lighting-slider" stretch="width" handleShape="circle" toolTipShowType="auto"
-              sendEventOnChange="15"
-              receiveStateValue="15" orientation="horizontal"></ch5-slider>
-    
-    <h3 data-ch5-i18n="-+buttons.serial.title+-">SERIAL</h3>
-    
-    <!-- Check if we can get text input -->
-    <ch5-textinput stretch="width" type="text" placeholder="Type here" sendeventonchange="6">
-    </ch5-textinput>   
-    
-    
+          label="-+buttons.gradient.btn.blue+-" sendeventonclick="31"></ch5-button>
+      </div>
+      <h3 data-ch5-i18n="-+buttons.volume.title+-">ANALOGUE SLIDERS</h3>
+      <ch5-slider class="lighting-slider" stretch="width" handleShape="circle" toolTipShowType="auto"
+        sendEventOnChange="3" receiveStateValue="3" orientation="horizontal"></ch5-slider>
+
+      <h3 data-ch5-i18n="-+buttons.serial.title+-">SERIAL</h3>
+
+      <!-- Check if we can get text input -->
+      <ch5-textinput stretch="width" type="text" placeholder="Type here" sendeventonchange="6">
+      </ch5-textinput>
 
 
 
-    <!-- Check if we can get text input -->
-    <!-- <ch5-textinput stretch="width" type="text" placeholder="Type here" sendeventonchange="32">
+
+      <div class="col-md-11 position-fixed mb-4 media-bar">
+        <div class="d-flex justify-content-between  rounded shadow align-items-center bg-light p-2 m-2">
+          <!-- Right div -->
+          <div class="d-flex col-md-4 p-0 align-items-center">
+            <div>
+              <img src="img/artwork.jpg" alt="" class="img-thumbnail rounded">
+            </div>
+            <div class="ml-2">
+              <p class="m-1 song-title font-weight-bold">Comfortably Numb</p>
+              <p class="m-1 artist-name">Pink Floyd</p>
+            </div>
+          </div>
+          <!-- Center div -->
+          <div class="col-md-4 d-flex justify-content-center">
+            <div>
+              <i class="fa fa-backward fa-2x mx-2"></i>
+              <i class="fa fa-play fa-2x p-2 mx-2"></i>
+              <i class="fa fa-forward fa-2x mx-2"></i>
+            </div>
+          </div>
+          <!-- Right div -->
+          <div class="col-md-4 d-flex justify-content-end">
+            <ch5-slider class="lighting-slider p-5" stretch="width" handleShape="circle" toolTipShowType="auto"
+              sendEventOnChange="3" receiveStateValue="4" orientation="horizontal"></ch5-slider>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Check if we can get text input -->
+      <!-- <ch5-textinput stretch="width" type="text" placeholder="Type here" sendeventonchange="32">
     </ch5-textinput>
     <h3 receiveStateLabel="33"></h3> -->
 
 
+      <!-- CH5 buttons from video.js are loaded into this div -->
+      <div class="" id="list-item">
 
-  
- 
+      </div>
+
+      <br>
+
+
+      <!-- Check if we can get text output on buttonpress -->
+      <h3 data-ch5-innerhtml="31"></h3>
+
+
+      <br>
+      <br>
 
 
 
+      <h3 receiveStateValue="4"></h3>
 
-    <ch5-button shape="rounded-rectangle" type="text" receivestatelabel="6"></ch5-button>
-
-  <!-- CH5 buttons from video.js are loaded into this div -->
-    <div class="" id="list-item">
-
-    </div>
-
-    <br>
-    <br>
-
-       <!-- Check if we can get text output on buttonpress -->
-       <h3 data-ch5-innerhtml="31"></h3>
-
-    
-    <ch5-button shape="rounded-rectangle" type="text" receivestatelabel="31"></ch5-button>
 
 
 
