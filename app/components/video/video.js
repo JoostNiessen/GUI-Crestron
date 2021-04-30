@@ -87,31 +87,51 @@ var videoModule = (function () {
     }
 
 
-    var offSet = 1;
+    var offSet1 = 0;
+    var offSet2 = 0;
+    var offSet3 = 0;
     var receivedstatelabel = 12;
 
-    function countOffset() {
-        offSet = offSet + 1;
-        return offSet;
+    function countOffset1() {
+        offSet1 = offSet1 + 1;
+        return offSet1;
+    }
+
+    
+    function countOffset2() {
+        offSet2 = offSet2 + 1;
+        return offSet2;
+    }
+
+    
+    function countOffset3() {
+        offSet3 = offSet3 + 1;
+        return offSet3;
     }
 
     // Function creates button that adds buttons to a button list
     // countOffSet counts from starting number.
     function createButton() {
         var listContainer = document.getElementById("list-item");
-        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button class="app-button" receiveStateShow="' + countOffset() + '" receivestatelabel="' + countOffset() + '" sendeventonclick="' + countOffset() + '" ></ch5-button>');
+        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button class="app-button" receiveStateShow="' + countOffset1() + '" receivestatelabel="' + countOffset2() + '" sendeventonclick="' + countOffset3() + '" ></ch5-button>');
     };
 
 
+    
     (function fillButtonList() {
         var array = [];
-        array.length = 20;
+        array.length = 22;
 
-        for (let i = 1; i < array.length; i++) {
+        for (let i = 0; i < array.length; i++) {
             const element = array[i];
+
             createButton();                                                                        
         }
+
     })();
+
+
+
 
 
     /**
