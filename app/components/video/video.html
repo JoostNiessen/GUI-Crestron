@@ -22,13 +22,32 @@
 
 
 
+      <ch5-button iconUrl="/assets/img/ch5-stone-light-bg.jpg">
+
+      </ch5-button>
+
+      
+
+      <ch5-list class="source-list" indexId="idx" size="4" maxWidth="1000px"
+        receiveStateSize="SourceList.NumberOfSources" orientation="horizontal">
+        <template>
+          <div class="horizontal-list-item">
+            <ch5-button customClass="source-btn-{{idx}}" class="d-block" type="text" shape="rectangle"
+              receivestatelabel="SourceList.Sources[{{idx}}].NameOfSource"
+              receivestateiconclass="SourceList.Sources[{{idx}}].IconClassOfSource" iconPosition="top"
+              receiveStateSelected="SourceList.Sources[{{idx}}].SourceIsSelected"
+              sendEventOnClick="SourceList.Sources[{{idx}}].SetSourceSelected"></ch5-button>
+          </div>
+        </template>
+      </ch5-list>
+
 
       <div class="col-md-11 position-fixed mb-4 media-bar">
         <div class="d-flex justify-content-between  rounded shadow align-items-center bg-light p-2 m-2">
           <!-- Right div -->
           <div class="d-flex col-md-4 p-0 align-items-center">
             <div>
-              <img src="/app/assets/img/cabin-logo.png" alt="" class="img-thumbnail rounded">
+              <ch5-image url="/app/assets/img/cabin-logo.png" alt="" class="img-thumbnail rounded"></ch5-image>
             </div>
             <div class="ml-2">
               <p class="m-1 song-title font-weight-bold">Comfortably Numb</p>
@@ -47,7 +66,6 @@
           <div class="col-md-4 d-flex justify-content-end">
             <ch5-slider class="lighting-slider p-5" stretch="width" handleShape="circle" toolTipShowType="auto"
               sendEventOnChange="3" receiveStateValue="4" orientation="horizontal"></ch5-slider>
-
           </div>
         </div>
       </div>
@@ -69,11 +87,8 @@
       <!-- Check if we can get text output on buttonpress -->
       <h3 data-ch5-innerhtml="31"></h3>
 
-
       <br>
       <br>
-
-
 
       <h3 receiveStateValue="4"></h3>
 

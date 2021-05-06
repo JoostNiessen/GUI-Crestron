@@ -67,7 +67,7 @@
     {
       "state": "SourceList.Sources[0].IconClassOfSource",
       "type": "s",
-      "value": "fas fa-tv"
+      "value": "fas fa-gamepad"
     }, {
       "state": "SourceList.Sources[1].IconClassOfSource",
       "type": "s",
