@@ -90,6 +90,7 @@ var videoModule = (function () {
     var offSet1 = 0;
     var offSet2 = 0;
     var offSet3 = 0;
+    var receivedstatelabel = 12;
 
     function countOffset1() {
         offSet1 = offSet1 + 1;
@@ -112,10 +113,8 @@ var videoModule = (function () {
     // countOffSet counts from starting number.
     function createButton() {
         var listContainer = document.getElementById("list-item");
-        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button receiveStateShow="' + countOffset1() + '" sendeventonclick="' + countOffset3() + '"><button><img src=".\app\assets\img\cabin-logo.png"><h3 data-ch5-innerhtml="' + countOffset2() + '"></h3></button></div>');
+        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button class="app-button" receiveStateShow="' + countOffset1() + '" receivestatelabel="' + countOffset2() + '" sendeventonclick="' + countOffset3() + '" receivestateiconclass="SourceList.Sources[3].IconClassOfSource" ></ch5-button>');
     };
-
-    
 
 
     
