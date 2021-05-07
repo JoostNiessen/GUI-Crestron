@@ -20,26 +20,63 @@
       <ch5-textinput stretch="width" type="text" placeholder="Type here" sendeventonchange="6">
       </ch5-textinput>
 
+      
 
 
-      <ch5-button iconUrl="/assets/img/ch5-stone-light-bg.jpg">
+      <div class="list-item"></div>
+
+
+      <ch5-button iconClass="fas fa-home" iconUrl="img/image.png">
 
       </ch5-button>
 
-      
+
 
       <ch5-list class="source-list" indexId="idx" size="4" maxWidth="1000px"
         receiveStateSize="SourceList.NumberOfSources" orientation="horizontal">
         <template>
           <div class="horizontal-list-item">
             <ch5-button customClass="source-btn-{{idx}}" class="d-block" type="text" shape="rectangle"
-              receivestatelabel="SourceList.Sources[{{idx}}].NameOfSource"
-              receivestateiconclass="SourceList.Sources[{{idx}}].IconClassOfSource" iconPosition="top"
-              receiveStateSelected="SourceList.Sources[{{idx}}].SourceIsSelected"
-              sendEventOnClick="SourceList.Sources[{{idx}}].SetSourceSelected"></ch5-button>
+              receivestatelabel="SourceList.Sources[3].NameOfSource"
+              receivestateiconclass="SourceList.Sources[3].IconClassOfSource" iconPosition="top"
+              receiveStateSelected="SourceList.Sources[3].SourceIsSelected"
+              sendEventOnClick="SourceList.Sources[3].SetSourceSelected"></ch5-button>
           </div>
         </template>
       </ch5-list>
+
+
+
+
+
+
+      <ch5-triggerview id="demo"> 
+        <ch5-triggerview-child>
+            <div class="viewcontent">
+                <h1>First View</h1>
+            </div>
+        </ch5-triggerview-child> 
+        <ch5-triggerview-child>
+            <div class="viewcontent">
+                <h1>Second View</h1>
+            </div>
+        </ch5-triggerview-child>
+        <ch5-triggerview-child>
+            <div class="viewcontent">
+                <h1>Third View</h1>
+            </div>
+        </ch5-triggerview-child>  
+    </ch5-triggerview>
+    
+    <br>
+    
+    <ch5-button id="prev" label="prev"></ch5-button>
+    <ch5-button id="next" label="next"></ch5-button>
+
+
+
+
+
 
 
       <div class="col-md-11 position-fixed mb-4 media-bar">

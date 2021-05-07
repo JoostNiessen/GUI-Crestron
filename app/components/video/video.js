@@ -113,7 +113,7 @@ var videoModule = (function () {
     // countOffSet counts from starting number.
     function createButton() {
         var listContainer = document.getElementById("list-item");
-        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button class="app-button" receiveStateShow="' + countOffset1() + '" receivestatelabel="' + countOffset2() + '" sendeventonclick="' + countOffset3() + '" receivestateiconclass="SourceList.Sources[3].IconClassOfSource" ></ch5-button>');
+        listContainer.insertAdjacentHTML('afterbegin', '<ch5-button class="app-button" receiveStateShow="' + countOffset1() + '" receivestatelabel="' + countOffset2() + '" sendeventonclick="' + countOffset3() + '" receivestateiconclass="WatchSource.Sources[4].IconClassOfSource" ></ch5-button>');
     };
 
 
@@ -130,7 +130,43 @@ var videoModule = (function () {
 
     })();
 
+    var iconArray = [
+        'fa'
+        
+    ]
 
+
+
+    // TRIGGERVIEW For All Sources
+    var demo = document.getElementById('demo');
+var prev = document.getElementById('prev');
+var next = document.getElementById('next');
+
+prev.addEventListener('click', function() {
+	demo.previousViewChild(); 
+});
+
+next.addEventListener('click', function() {
+	demo.nextViewChild(); 
+});
+
+demo.addEventListener('select', function(e) {
+    console.log('select event with detail: ', e.detail );
+    switch (e.detail) {
+        case 0:
+            prev.disabled = true;
+            next.disabled = false;
+        break;
+        case 2:
+            prev.disabled = false;
+            next.disabled = true;
+        break;
+        default:
+            prev.disabled = false;
+            next.disabled = false;
+        break;
+    }
+});
 
 
 
@@ -147,3 +183,4 @@ var videoModule = (function () {
         videoNavbarOpen: videoNavbarOpen
     };
 }());
+
