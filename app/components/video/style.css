@@ -12,3 +12,17 @@
     display: block;
     /* Other styles here */
 }
+
+
+.viewcontent {
+    width:100%;
+    height:200px;
+    background: red;
+    display: table;
+}
+
+.viewcontent h1 {
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+}
